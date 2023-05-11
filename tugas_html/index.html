@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contoh Tampilan HTML dan CSS</title>
+	<style>
+		/* Styling untuk navbar */
+		nav {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: white;
+			color: #000;
+			height: 50px;
+		}
+	nav a {
+        font-size: 24px;
+		color: #666;
+		margin: 0 20px;
+		text-decoration: none;
+	}
+
+	/* Styling untuk gambar header */
+	.header {
+        background-color:#ddd;
+		height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;	
+	}
+    .header h2{
+        color: gray;
+    }
+
+	/* Styling untuk row */
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 20px;
+	}
+
+	/* Styling untuk content kiri */
+	.content-kiri {
+		flex: 2;
+		padding: 20px;
+        color:#666;
+        padding: 0 5vw 0 9vw;
+	}
+
+    .content-kiri p{
+        font-size: 20px;
+        text-align: justify;
+    }
+    .content-kiri h2{
+        display: inline-block;
+        text-decoration: underline;
+        text-underline-position: under;
+        text-underline-offset: 3px;
+    }
+
+	/* Styling untuk sidebar kanan */
+	.sidebar-kanan {
+		flex: 1;
+		padding: 20px;
+	}
+    .sidebarArea{
+        width: 300px;
+        height: 300px;
+        background-color: #ddd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+	/* Styling untuk footer */
+	footer {
+		background-color: #ddd;
+		color: #666;
+		height: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+   
+</style>
+</head>
+<body>
+	<nav>
+		<a href="#">Menu1</a>
+		<a href="#">Menu2</a>
+		<a href="#">Menu3</a>
+		<a href="#">Menu4</a>
+	</nav>
+	<div class="header">
+        <h2>Gambar Header</p>
+    </div>
+	<div class="row">
+		<div class="content-kiri">
+			<h2>Title </h2>
+           	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac justo vitae tortor ullamcorper condimentum. Phasellus rutrum odio tellus, quis placerat nunc viverra at. Curabitur scelerisque ultricies turpis. Sed pharetra finibus tellus et tristique. Mauris quam mauris, dictum sed egestas ac, mollis ac dolor. Nunc suscipit turpis et orci hendrerit gravida. Proin ullamcorper viverra elementum. Vivamus tempor iaculis arcu vitae dapibus. Sed sodales aliquam cursus. Donec pulvinar dolor in tortor fermentum, vel feugiat mi blandit. Donec arcu nibh, sodales vitae ante et, feugiat accumsan orci. Nam maximus ipsum viverra ex dictum, vel cursus risus pellentesque. Duis viverra et orci nec pulvinar. Donec vitae odio in leo aliquam ornare eu vitae risus. Pellentesque in interdum mi, et dapibus nisi. Vivamus et orci nibh.</p>
+		</div>
+		<div class="sidebar-kanan">
+			<div class="sidebarArea">
+                <h2>Sidebar</h2>
+            </div>
+		</div>
+	</div>
+	<footer>
+		<h3>Footer</h3>
+	</footer>
+</body>
+</html>
